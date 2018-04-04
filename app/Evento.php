@@ -9,7 +9,7 @@ use WebTV\Equipamento;
 class Evento extends Model
 {
     //
-    public function equipamentos(){
-        $this->hasMany(Equipamento::class);
+    public function user() {
+        return $this->belongsTo(User::class);
     }
 }
