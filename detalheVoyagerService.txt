@@ -1,0 +1,14 @@
+    public function boot(Router $router, Dispatcher $event)
+    {
+        if (config('voyager.user.add_default_role_on_register')) {
+            $app_user = class_exists(config('voyager.user.namespace')) ? 
+                config('voyager.user.namespace') : config('auth.providers.users.model');
+            $app_user::created(function ($user) {
+                if (is_null($user->role_id)) {
+                    VoyagerFacade::model('User')->findOrFail($user->id)
+                        ->setRole(config('voyager.user.default_role'))
+                        ->save();
+                }
+            });
+        }
+...
