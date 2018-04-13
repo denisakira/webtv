@@ -1,6 +1,6 @@
 <?php
 
-namespace WebTV\Http\Controllers;
+namespace webTV\Http\Controllers;
 
 use Illuminate\Http\Request;
 

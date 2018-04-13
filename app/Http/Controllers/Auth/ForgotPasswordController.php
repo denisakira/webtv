@@ -1,8 +1,8 @@
 <?php
 
-namespace WebTV\Http\Controllers\Auth;
+namespace webTV\Http\Controllers\Auth;
 
-use WebTV\Http\Controllers\Controller;
+use webTV\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 
 class ForgotPasswordController extends Controller

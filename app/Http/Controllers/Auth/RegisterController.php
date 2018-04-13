@@ -1,9 +1,9 @@
 <?php
 
-namespace WebTV\Http\Controllers\Auth;
+namespace webTV\Http\Controllers\Auth;
 
-use WebTV\User;
-use WebTV\Http\Controllers\Controller;
+use webTV\User;
+use webTV\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -58,7 +58,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \WebTV\User
+     * @return \webTV\User
      */
     protected function create(array $data)
     {

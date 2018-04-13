@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        WebTV\Providers\AppServiceProvider::class,
-        WebTV\Providers\AuthServiceProvider::class,
-        // WebTV\Providers\BroadcastServiceProvider::class,
-        WebTV\Providers\EventServiceProvider::class,
-        WebTV\Providers\RouteServiceProvider::class,
+        webTV\Providers\AppServiceProvider::class,
+        webTV\Providers\AuthServiceProvider::class,
+        // webTV\Providers\BroadcastServiceProvider::class,
+        webTV\Providers\EventServiceProvider::class,
+        webTV\Providers\RouteServiceProvider::class,
 
     ],
 

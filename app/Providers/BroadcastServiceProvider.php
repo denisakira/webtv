@@ -1,6 +1,6 @@
 <?php
 
-namespace WebTV\Providers;
+namespace webTV\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Broadcast;

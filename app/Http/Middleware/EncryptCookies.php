@@ -1,6 +1,6 @@
 <?php
 
-namespace WebTV\Http\Middleware;
+namespace webTV\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as Middleware;
 

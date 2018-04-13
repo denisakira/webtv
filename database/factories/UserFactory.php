@@ -13,7 +13,7 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(WebTV\User::class, function (Faker $faker) {
+$factory->define(webTV\User::class, function (Faker $faker) {
     static $password;
 
     return [

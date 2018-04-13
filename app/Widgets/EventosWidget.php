@@ -1,11 +1,11 @@
 <?php
 
-namespace WebTV\Widgets;
+namespace webTV\Widgets;
 
 use Arrilot\Widgets\AbstractWidget;
 use Illuminate\Support\Str;
 use TCG\Voyager\Facades\Voyager;
-use WebTV\Evento as Evento;
+use webTV\Evento as Evento;
 
 class EventosWidget extends AbstractWidget
 {
@@ -31,7 +31,7 @@ class EventosWidget extends AbstractWidget
             'text'   => __('voyager.dimmer.user_text', ['count' => $count, 'string' => Str::lower($string)]),
             'button' => [
                 'text' => 'Eventos',
-                'link' => route('voyager.eventos.index'),
+                'link' => route('home'),
             ],
             'image' => '/img/evento-bg.jpg',
         ]));

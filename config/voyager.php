@@ -13,7 +13,7 @@ return [
     'user' => [
         'add_default_role_on_register' => true,
         'default_role'                 => 'user',
-        'namespace'                    => WebTV\User::class,
+        'namespace'                    => webTV\User::class,
         'default_avatar'               => 'users/default.png',
     ],
 
@@ -42,7 +42,7 @@ return [
     */
 
     'models' => [
-        'namespace' => 'WebTV\\',
+        'namespace' => 'webTV\\',
     ],
 
     /*
@@ -168,7 +168,7 @@ return [
         'widgets' => [
             'TCG\\Voyager\\Widgets\\UserDimmer',
             'TCG\\Voyager\\Widgets\\PostDimmer',
-            'WebTV\\Widgets\\EventosWidget',
+            '\webTV\\Widgets\\EventosWidget',
         ],
 
     ],

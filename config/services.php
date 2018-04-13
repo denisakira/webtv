@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => WebTV\User::class,
+        'model' => webTV\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

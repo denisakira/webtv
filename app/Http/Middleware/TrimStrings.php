@@ -1,6 +1,6 @@
 <?php
 
-namespace WebTV\Http\Middleware;
+namespace webTV\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\TrimStrings as Middleware;
 

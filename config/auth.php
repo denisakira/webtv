@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => WebTV\User::class,
+            'model' => webTV\User::class,
         ],
 
         // 'users' => [

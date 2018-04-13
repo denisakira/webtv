@@ -28,17 +28,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
-    WebTV\Http\Kernel::class
+    webTV\Http\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    WebTV\Console\Kernel::class
+    webTV\Console\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    WebTV\Exceptions\Handler::class
+    webTV\Exceptions\Handler::class
 );
 
 /*

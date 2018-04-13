@@ -1,6 +1,6 @@
 <?php
 
-namespace WebTV\Http\Middleware;
+namespace webTV\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

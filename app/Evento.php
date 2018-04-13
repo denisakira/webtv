@@ -1,10 +1,10 @@
 <?php
 
-namespace WebTV;
+namespace webTV;
 
 use Illuminate\Database\Eloquent\Model;
 
-use WebTV\Equipamento;
+use webTV\Equipamento;
 
 class Evento extends Model
 {

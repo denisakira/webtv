@@ -20,7 +20,7 @@
     <div class="navbar navbar-dark bg-dark box-shadow">
         <div class="container d-flex justify-content-between">
             <a href="/" class="navbar-brand d-flex align-items-center">
-                <strong>WebTV</strong>
+                <strong>webTV</strong>
             </a>
             <a href="/admin">
                 <strong>
