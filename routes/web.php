@@ -23,6 +23,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/logout', 'HomeController@logout');
 
+
+Route::get('/google', function() {
+    return view('auth.googlelogin');
+    
+    //
+});
+
+
 //VOYAGER
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

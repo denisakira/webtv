@@ -66,4 +66,26 @@
         </div>
     </div>
 </div>
+{{-- 
+<script>
+    window.onGoogleYoloLoad = (googleyolo) => {
+        // The 'googleyolo' object is ready for use.
+    };
+
+    const retrievePromise = googleyolo.retrieve({
+    supportedAuthMethods: [
+        "https://accounts.google.com",
+        "googleyolo://id-and-password"
+    ],
+    supportedIdTokenProviders: [
+        {
+        uri: "https://accounts.google.com",
+        clientId: "YOUR_GOOGLE_CLIENT_ID"
+        }
+    ]
+    });
+            
+</script> --}}
+
+
 @endsection

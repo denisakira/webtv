@@ -31,7 +31,7 @@ class EventosWidget extends AbstractWidget
             'text'   => __('voyager.dimmer.user_text', ['count' => $count, 'string' => Str::lower($string)]),
             'button' => [
                 'text' => 'Eventos',
-                'link' => route('home'),
+                'link' => route('voyager.eventos.index'),
             ],
             'image' => '/img/evento-bg.jpg',
         ]));

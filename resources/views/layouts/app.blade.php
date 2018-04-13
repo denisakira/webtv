@@ -9,9 +9,14 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    {{-- Google Login API --}}
+    <script src="https://smartlock.google.com/client"></script>
+
 </head>
 <body>
     <div id="app">
