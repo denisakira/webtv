@@ -20,4 +20,8 @@ class Evento extends Model
         # code...
         return $this->hasMany(Equipamento::class);
     }
+
+    // public function equipamentoId() {
+    //     return $this->hasMany(Equipamento::class, "equipamento_id");
+    // }
 }

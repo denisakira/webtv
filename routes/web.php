@@ -24,11 +24,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/logout', 'HomeController@logout');
 
 
-Route::get('/google', function() {
-    return view('auth.googlelogin');
-    
-    //
-});
+//Socialite
+Route::get('login/google', 'Auth\LoginController@redirectToProvider');
+
+Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallback');
+
+
 
 
 //VOYAGER

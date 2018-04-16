@@ -60,6 +60,14 @@
                                 </a>
                             </div>
                         </div>
+
+                        <hr>
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <a href="{{ url('/login/google') }}" class="btn btn-google"><i class="fab fa-google fa-5x"></i></a>
+                            </div>
+                        </div>
+                    
                     </form>
                 </div>
             </div>
