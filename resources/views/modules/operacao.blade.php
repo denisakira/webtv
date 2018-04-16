@@ -9,7 +9,7 @@
             </h1>
 
             <div class="visible-print text-center">
-                {!! QrCode::size(150)->generate(url("/admin/equipamentos/2/edit")); !!}
+                {!! QrCode::size(150)->generate(url("/admin/equipamentos/2/edit")) !!}
             </div>
 
         </div>
