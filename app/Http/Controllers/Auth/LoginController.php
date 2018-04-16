@@ -50,6 +50,7 @@ class LoginController extends Controller
     public function redirectToProvider()
     {
         return Socialite::driver('google')
+            ->with(['hd' => 'faacwebtv.com.br'])
             ->scopes(['openid', 'profile', 'email'])
             ->redirect();
     }
@@ -63,17 +64,17 @@ class LoginController extends Controller
     {
         $user = Socialite::driver('google')->user();
 
-        $google_client_token = [
-            'access_token' => $user->token,
-            'refresh_token' => $user->refreshToken,
-            'expires_in' => $user->expiresIn
-        ];
+        // $google_client_token = [
+        //     'access_token' => $user->token,
+        //     'refresh_token' => $user->refreshToken,
+        //     'expires_in' => $user->expiresIn
+        // ];
     
-        $client = new Google_Client();
-        $client->setApplicationName("Webtv");
-        $client->setAccessToken(json_encode($google_client_token));
+        // $client = new Google_Client();
+        // $client->setApplicationName("Webtv");
+        // $client->setAccessToken(json_encode($google_client_token));
     
-        $service = new Google_Service_People($client);    
+        // $service = new Google_Service_People($client);    
 
         $authUser = $this->findOrCreateUser($user);
         
