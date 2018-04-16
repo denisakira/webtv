@@ -23,6 +23,8 @@
 
     {{-- Google Fonts --}}
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
 
 </head>
 

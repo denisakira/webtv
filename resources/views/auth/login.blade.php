@@ -11,7 +11,7 @@
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                        {{-- <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
                             <div class="col-md-6">
@@ -61,9 +61,9 @@
                             </div>
                         </div>
 
-                        <hr>
+                        <hr> --}}
                         <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
+                            <div class="col-md-6 col-md-offset-5">
                                 <a href="{{ url('/login/google') }}" class="btn btn-google"><i class="fab fa-google fa-5x"></i></a>
                             </div>
                         </div>
