@@ -115,7 +115,9 @@
                 {{-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> --}}
     
                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                <a href="/operacao" type="button" class="btn btn-light-blue btn-md">Equipamentos</a>
+                <a href="/operacao" type="button" class="btn btn-blue btn-md">Equipamentos</a>
+            
+                <a href="/qrgen" type="button" class="btn btn-blue btn-md">Gerador QR</a>
             </div>
             <!--Card content-->
     
