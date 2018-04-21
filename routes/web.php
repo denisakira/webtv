@@ -17,19 +17,20 @@ Route::get('/operacao', 'ModuleController@operacao');
 
 Route::get('/producao', 'ModuleController@producao');
 
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/logout', 'HomeController@logout');
+
+Auth::routes();
+
+//QR-CODE
+Route::get('/qrgen', 'EquipamentoController@qrgen');
 
 
 //Socialite
 Route::get('login/google', 'Auth\LoginController@redirectToProvider');
 
 Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallback');
-
-
 
 
 //VOYAGER

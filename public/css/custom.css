@@ -3,6 +3,10 @@ h1 {
     padding: 1.2em;
 }
 
+h4{
+    font-family: 'Lobster', cursive;
+}
+
 main{
     padding-bottom: 3em;
 }

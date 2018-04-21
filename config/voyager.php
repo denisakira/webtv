@@ -14,7 +14,7 @@ return [
         'add_default_role_on_register' => true,
         'default_role'                 => 'user',
         'namespace'                    => webTV\User::class,
-        'default_avatar'               => 'users/default.png',
+        'default_avatar'               => 'users/logo_novo.png',
     ],
 
     /*
@@ -27,7 +27,7 @@ return [
     */
 
     'controllers' => [
-        'namespace' => 'TCG\\Voyager\\Http\\Controllers',
+        'namespace' => 'webTV\\Http\\Controllers\\Voyager',
     ],
 
     /*
