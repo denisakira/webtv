@@ -11,20 +11,20 @@
 |
 */
 
+
 Route::get('/', 'HomeController@index');
+
+Route::get('/home', 'HomeController@index')->name('home');
+
 
 Route::get('/operacao', 'ModuleController@operacao');
 
 Route::get('/producao', 'ModuleController@producao');
 
-Route::get('/home', 'HomeController@index')->name('home');
-
 Route::get('/logout', 'HomeController@logout');
 
-Auth::routes();
 
-//QR-CODE
-Route::get('/qrgen', 'EquipamentoController@qrgen');
+Auth::routes();
 
 
 //Socialite

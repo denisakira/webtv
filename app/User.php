@@ -30,4 +30,14 @@ class User extends \TCG\Voyager\Models\User
     public function evento() {
         return $this->hasMany(Evento::class);
     }
+
+    /**
+     * @param array|string $role
+     * @return bool
+     */
+    public function hasRole($role)
+    {
+        return $this->role == $role;
+    }
+
 }
