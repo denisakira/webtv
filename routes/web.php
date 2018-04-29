@@ -16,10 +16,7 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-Route::get('/operacao', 'ModuleController@operacao');
-
-Route::get('/producao', 'ModuleController@producao');
+Route::get('/sistema','HomeController@sistema')->name('sistema');
 
 Route::get('/logout', 'HomeController@logout');
 
