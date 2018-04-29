@@ -28,6 +28,23 @@
                         <!-- PUT Method if we are editing -->
                         @if(!is_null($dataTypeContent->getKey()))
                             {{ method_field("PUT") }}
+
+                            {{-- GERADOR DE QR CODE --}}
+                            {{-- SÓ APARECE SE ESTIVER EM EDIT --}}
+                            <div class="panel-body">
+
+                                @if(!is_null(QrCode::format('png')->size(200)
+                                ->generate(url(Request::url()),"img/qr.png")))
+                                    <h4>
+                                        QR Code gerado!
+                                    </h4>
+                                    <img src="{{ url("img/qr.png") }}">
+                                    <hr>
+
+                                @endif
+                            </div>
+                            {{--FIM GERADOR DE QR CODE --}}
+
                         @endif
 
                         <!-- CSRF TOKEN -->
@@ -76,14 +93,6 @@
                                 @endif
                             @endforeach
 
-                            {{-- GERADOR DE QR CODE --}}
-                            @if(!is_null(QrCode::format('png')->size(200)
-                            ->generate(url(Request::url()),"img/qr.png")))
-                                <br>
-                                QR Code gerado!
-                                <br>
-                            @endif
-                            
 
                         </div><!-- panel-body -->
 

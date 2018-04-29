@@ -26,6 +26,11 @@ class HomeController extends Controller
         return view('modules.home');
     }
 
+    public function sistema()
+    {
+        return view('modules.sistema');
+    }
+
     public function logout(){
         auth()->logout();
 
