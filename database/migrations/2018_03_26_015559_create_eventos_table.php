@@ -18,8 +18,8 @@ class CreateEventosTable extends Migration
             $table->string('nome');
             $table->timestamps();
             $table->dateTime('data');
-            $table->integer('equipamento_id');
-            $table->integer('user_id');
+            $table->string('equipamento_id')->nullable();
+            $table->string('user_id');
         });
     }
 

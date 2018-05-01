@@ -3,7 +3,7 @@
     <div class="container">
 
         <!-- Brand -->
-        <a class="navbar-brand" href="#" target="_blank">
+        <a class="navbar-brand" href="home">
             <!-- <strong>FAAC webTV</strong> -->
             <img style="height: 2.4em;" src="img/logo_novo.png" alt="logo">
         </a>
@@ -26,7 +26,7 @@
                         QUEM SOMOS
                     </a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">A FAAC WEBTV</a>
+                        <a class="dropdown-item" href="/sobre">A FAAC WEBTV</a>
                         <a class="dropdown-item" href="#">MEMBROS ATUAIS</a>
                         <a class="dropdown-item" href="#">MEMBROS ANTIGOS</a>
                     </div>
@@ -36,7 +36,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CONTATO</a>
+                    <a class="nav-link" href="/contato">CONTATO</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">TRANSMISSÕES</a>
@@ -47,18 +47,23 @@
             <!-- Right -->
             <ul class="navbar-nav nav-flex-icons">
                 <li class="nav-item">
-                    <a href="https://www.facebook.com/mdbootstrap" class="nav-link">
+                    <a href="https://facebook.com/faacwebtv/" class="nav-link" target="_blank">
                         <i class="fab fa-facebook fa-lg"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://twitter.com/MDBootstrap" class="nav-link">
+                    <a href="https://twitter.com/faacwebtv" class="nav-link" target="_blank">
                         <i class="fab fa-twitter fa-lg"></i>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="https://www.instagram.com/faacwebtv/" class="nav-link" target="_blank">
                         <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.youtube.com/channel/UC12PbltmUTaYm4RiRMK2WNA" class="nav-link" target="_blank">
+                        <i class="fab fa-lg fa-youtube"></i>
                     </a>
                 </li>
 

@@ -17,8 +17,7 @@ class CreateEquipamentosTable extends Migration
             $table->increments('id');
             $table->string('nome');
             $table->string('estado');
-            $table->integer('evento_id');
-
+            $table->integer('evento_id')->nullable();
             $table->timestamps();
         });
     }

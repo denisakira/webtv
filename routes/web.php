@@ -16,6 +16,10 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/contato','HomeController@contato')->name('contato');
+
+Route::get('/sobre','HomeController@sobre')->name('sobre');
+
 Route::get('/sistema','HomeController@sistema')->name('sistema');
 
 Route::get('/logout', 'HomeController@logout');

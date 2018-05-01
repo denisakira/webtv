@@ -1,159 +1,161 @@
 @extends('front.master')
 
 @section('content')
-    <!--Carousel Wrapper-->
-    <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
 
-        <!--Indicators-->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-            <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-        </ol>
-        <!--/.Indicators-->
+    <div class="view">
 
+        <!--Video source-->
+        <video class="" autoplay loop>
+            <source src="https://mdbootstrap.com/img/video/city.mp4" type="video/mp4" />
+        </video>
 
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
 
-            <!--First slide-->
-            <div class="carousel-item active">
-                <div class="view">
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+                <h1 class="mb-4">
+                    Agora na <span style="color:#9b0000">FAAC webTV</span>
+                </h1>
 
-                    <!--Video source-->
-                    <video class="" autoplay loop>
-                        <source src="https://mdbootstrap.com/img/video/city.mp4" type="video/mp4" />
-                    </video>
+                <a href="#" class="play-btn" style="color: white;">
+                    <i class="fas fa-play fa-5x"></i>
+                </a>
 
-                    <!-- Mask & flexbox options-->
-                    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-                        <!-- Content -->
-                        <div class="text-center white-text mx-5 wow fadeIn">
-                            <h1 class="mb-4">
-                                <strong>FAAC webTV</strong>
-                            </h1>
-
-                            <p>
-                                <strong>Descrição</strong>
-                            </p>
-
-                            <p class="mb-4 d-none d-md-block">
-                                <strong>Fazemos TX</strong>
-                            </p>
-
-                            <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start free tutorial
-                                <i class="fa fa-graduation-cap ml-2"></i>
-                            </a>
-                        </div>
-                        <!-- Content -->
-
-                    </div>
-                    <!-- Mask & flexbox options-->
-
-                </div>
             </div>
-            <!--/First slide-->
-
-
-
-            <!--Second slide-->
-            <div class="carousel-item">
-                <div class="view">
-
-                    <!--Video source-->
-                    <video class="video-full" autoplay loop>
-                        <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
-                    </video>
-
-                    <!-- Mask & flexbox options-->
-                    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-                        <!-- Content -->
-                        <div class="text-center white-text mx-5 wow fadeIn">
-                            <h1 class="mb-4">
-                                <strong>Learn Bootstrap 4 with MDB</strong>
-                            </h1>
-
-                            <p>
-                                <strong>Best & free guide of responsive web design</strong>
-                            </p>
-
-                            <p class="mb-4 d-none d-md-block">
-                                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
-                                    available. Create your own, stunning website.</strong>
-                            </p>
-
-                            <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start free tutorial
-                                <i class="fa fa-graduation-cap ml-2"></i>
-                            </a>
-                        </div>
-                        <!-- Content -->
-
-                    </div>
-                    <!-- Mask & flexbox options-->
-
-                </div>
-            </div>
-            <!--/Second slide-->
-
-
-
-            <!--Third slide-->
-            <div class="carousel-item">
-                <div class="view">
-
-                    <!--Video source-->
-                    <video class="video-full" autoplay loop>
-                        <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
-                    </video>
-
-                    <!-- Mask & flexbox options-->
-                    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-                        <!-- Content -->
-                        <div class="text-center white-text mx-5 wow fadeIn">
-                            <h1 class="mb-4">
-                                <strong>Learn Bootstrap 4 with MDB</strong>
-                            </h1>
-
-                            <p>
-                                <strong>Best & free guide of responsive web design</strong>
-                            </p>
-
-                            <p class="mb-4 d-none d-md-block">
-                                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
-                                    available. Create your own, stunning website.</strong>
-                            </p>
-
-                            <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start free tutorial
-                                <i class="fa fa-graduation-cap ml-2"></i>
-                            </a>
-                        </div>
-                        <!-- Content -->
-
-                    </div>
-                    <!-- Mask & flexbox options-->
-
-                </div>
-            </div>
-            <!--/Third slide-->
+            <!-- Content -->
 
         </div>
-        <!--/.Slides-->
-
-        <!--Controls-->
-        <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Próximo</span>
-        </a>
-        <!--/.Controls-->
+        <!-- Mask & flexbox options-->
 
     </div>
+
+
+
+    <!--Carousel Wrapper-->
+    {{--<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">--}}
+
+        {{--<!--Indicators-->--}}
+        {{--<ol class="carousel-indicators">--}}
+            {{--<li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>--}}
+            {{--<li data-target="#carousel-example-1z" data-slide-to="1"></li>--}}
+            {{--<li data-target="#carousel-example-1z" data-slide-to="2"></li>--}}
+        {{--</ol>--}}
+        {{--<!--/.Indicators-->--}}
+
+
+        {{--<!--Slides-->--}}
+        {{--<div class="carousel-inner" role="listbox">--}}
+
+            {{--<!--First slide-->--}}
+            {{--<div class="carousel-item active">--}}
+                {{--<div class="view">--}}
+
+                    {{--<!--Video source-->--}}
+                    {{--<video class="" autoplay loop>--}}
+                        {{--<source src="https://mdbootstrap.com/img/video/city.mp4" type="video/mp4" />--}}
+                    {{--</video>--}}
+
+                    {{--<!-- Mask & flexbox options-->--}}
+                    {{--<div class="mask rgba-black-light d-flex justify-content-center align-items-center">--}}
+
+                        {{--<!-- Content -->--}}
+                        {{--<div class="text-center white-text mx-5 wow fadeIn">--}}
+                            {{--<h1 class="mb-4">--}}
+                                {{--Agora na <span style="color:#9b0000">FAAC webTV</span>--}}
+                            {{--</h1>--}}
+
+                            {{--<a href="#" class="play-btn" style="color: white;">--}}
+                                {{--<i class="fas fa-play fa-5x"></i>--}}
+                            {{--</a>--}}
+
+                        {{--</div>--}}
+                        {{--<!-- Content -->--}}
+
+                    {{--</div>--}}
+                    {{--<!-- Mask & flexbox options-->--}}
+
+                {{--</div>--}}
+            {{--</div>--}}
+            {{--<!--/First slide-->--}}
+
+
+
+            {{--<!--Second slide-->--}}
+            {{--<div class="carousel-item">--}}
+                {{--<div class="view">--}}
+
+                    {{--<!--Video source-->--}}
+                    {{--<video class="video-full" autoplay loop>--}}
+                        {{--<source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />--}}
+                    {{--</video>--}}
+
+                    {{--<!-- Mask & flexbox options-->--}}
+                    {{--<div class="mask rgba-black-light d-flex justify-content-center align-items-center">--}}
+
+                        {{--<!-- Content -->--}}
+                        {{--<div class="text-center white-text mx-5 wow fadeIn">--}}
+                            {{--<h1 class="mb-4">--}}
+                                {{--Agora na <span style="color:#9b0000">FAAC webTV</span>--}}
+                            {{--</h1>--}}
+
+                            {{--<a href="#" class="play-btn" style="color: white;">--}}
+                                {{--<i class="fas fa-play fa-5x"></i>--}}
+                            {{--</a>--}}
+
+                        {{--</div>--}}
+                        {{--<!-- Content -->--}}
+
+                    {{--</div>--}}
+                    {{--<!-- Mask & flexbox options-->--}}
+
+                {{--</div>--}}
+            {{--</div>--}}
+            {{--<!--/Second slide-->--}}
+
+
+
+            {{--<!--Third slide-->--}}
+            {{--<div class="carousel-item">--}}
+                {{--<div class="view">--}}
+
+                    {{--<!--Video source-->--}}
+                    {{--<video class="video-full" autoplay loop>--}}
+                        {{--<source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />--}}
+                    {{--</video>--}}
+
+                    {{--<!-- Mask & flexbox options-->--}}
+                    {{--<div class="mask rgba-black-light d-flex justify-content-center align-items-center">--}}
+
+                        {{--<!-- Content -->--}}
+                        {{--<a target="_blank" href="#" class="btn btn-lg">--}}
+                            {{--<i class="fas fa-play fa-5x"></i>--}}
+
+                        {{--</a>--}}
+                        {{--<!-- Content -->--}}
+
+                    {{--</div>--}}
+                    {{--<!-- Mask & flexbox options-->--}}
+
+                {{--</div>--}}
+            {{--</div>--}}
+            {{--<!--/Third slide-->--}}
+
+        {{--</div>--}}
+        {{--<!--/.Slides-->--}}
+
+        {{--<!--Controls-->--}}
+        {{--<a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">--}}
+            {{--<span class="carousel-control-prev-icon" aria-hidden="true"></span>--}}
+            {{--<span class="sr-only">Anterior</span>--}}
+        {{--</a>--}}
+        {{--<a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">--}}
+            {{--<span class="carousel-control-next-icon" aria-hidden="true"></span>--}}
+            {{--<span class="sr-only">Próximo</span>--}}
+        {{--</a>--}}
+        {{--<!--/.Controls-->--}}
+
+    {{--</div>--}}
     <!--/.Carousel Wrapper-->
 
 
@@ -163,6 +165,8 @@
 
     <!--Main layout-->
     <main>
+
+        {{--Container--}}
         <div class="container">
 
             <!--Section: Originais webTV-->
@@ -207,6 +211,8 @@
             </section>
             <!--Section End: Originais webTV-->
 
+
+            {{--Fim Originais / Seção Últimas Transmissões--}}
             <hr class="my-5">
 
 
