@@ -32,7 +32,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">SOLICITE UMA TRANSMISSÃO</a>
+                    <a class="nav-link" href="/solicite">SOLICITE UMA TRANSMISSÃO</a>
                 </li>
 
                 <li class="nav-item">

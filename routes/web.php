@@ -22,6 +22,8 @@ Route::get('/sobre','HomeController@sobre')->name('sobre');
 
 Route::get('/sistema','HomeController@sistema')->name('sistema');
 
+Route::get('/solicite','HomeController@solicite')->name('solicite');
+
 Route::get('/logout', 'HomeController@logout');
 
 
