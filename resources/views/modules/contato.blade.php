@@ -23,12 +23,15 @@
                         <!--Section description-->
                         {{--<p class="text-center mb-5">texto?</p>--}}
 
+                        @include('front.errors')
+
                         <div class="row">
 
                             <!--Grid column-->
                             <div class="col-md-8 col-xl-9">
 
-                                <form>
+                                <form method="POST" id="contact-form" action="/contato">
+                                    {{ csrf_field() }}
 
                                     <!--Grid row-->
                                     <div class="row">
@@ -36,8 +39,8 @@
                                         <!--Grid column-->
                                         <div class="col-md-6">
                                             <div class="md-form">
-                                                <input type="text" id="contact-name" class="form-control">
-                                                <label for="contact-name" class="">Your name</label>
+                                                <input required type="text" id="nome" class="form-control" name="nome">
+                                                <label for="nome" class="">Nome</label>
                                             </div>
                                         </div>
                                         <!--Grid column-->
@@ -45,8 +48,8 @@
                                         <!--Grid column-->
                                         <div class="col-md-6">
                                             <div class="md-form">
-                                                <input type="text" id="contact-email" class="form-control">
-                                                <label for="contact-email" class="">Your email</label>
+                                                <input required type="email" id="email" class="form-control" name="email">
+                                                <label for="email" class="">E-mail</label>
                                             </div>
                                         </div>
                                         <!--Grid column-->
@@ -58,8 +61,8 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="md-form">
-                                                <input type="text" id="contact-Subject" class="form-control">
-                                                <label for="contact-Subject" class="">Subject</label>
+                                                <input required type="text" id="assunto" class="form-control" name="assunto">
+                                                <label for="assunto" class="">Assunto</label>
                                             </div>
                                         </div>
                                     </div>
@@ -72,19 +75,22 @@
                                         <div class="col-md-12">
 
                                             <div class="md-form">
-                                                <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
-                                                <label for="contact-message">Your message</label>
+                                                <textarea required type="text" id="mensagem" class="form-control md-textarea"
+                                                          name="mensagem" rows="3"></textarea>
+                                                <label for="mensagem">Mensagem</label>
                                             </div>
 
                                         </div>
                                     </div>
                                     <!--Grid row-->
+
+                                    <div class="text-center text-md-left">
+                                        <button type="submit" form="contact-form" class="btn btn-primary btn-md">Enviar</button>
+                                    </div>
 
                                 </form>
 
-                                <div class="text-center text-md-left">
-                                    <a class="btn btn-primary btn-md">Send</a>
-                                </div>
+
                             </div>
                             <!--Grid column-->
 
@@ -93,7 +99,7 @@
                                 <ul class="list-unstyled">
                                     <li>
                                         <i class="fas fa-map-marker fa-2x blue-text"></i>
-                                        <p>San Francisco, CA 94126, USA</p>
+                                        <p>UNESP <br>Av. Eng. Luís Edmundo Carrijo Coube, 14-01<br>Bauru, SP</p>
                                     </li>
 
                                     <li>

@@ -169,57 +169,8 @@
         {{--Container--}}
         <div class="container">
 
-            <!--Section: Originais webTV-->
-            <section class="mt-5 wow fadeIn">
-
-                <h1 class="text-center h1-responsive">
-                    Originais FAAC webTV
-                </h1>
-                <br>
-
-                <!--  Owl Carousel Originais webTV -->
-                <div class="owl-carousel owl-theme">
-
-                    <div class="item">
-                        <a href="#">
-                            <img src="img/bladerunner2049.jpg" alt="bladerunner2049">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <img src="img/guardiansofthegalaxy.jpg" alt="guardiansofthegalaxy.jpg">
-                    </div>
-                    <div class="item">
-                        <img src="img/forrestgump.jpg" alt="forrestgump.jpg">
-                    </div>
-                    <div class="item">
-                        <img src="img/killbill.jpg" alt="killbill.jpg">
-                    </div>
-                    <div class="item">
-                        <img src="img/starwarsVIII_thelastjedi.jpg" alt="starwarsVIII_thelastjedi.jpg">
-                    </div>
-                    <div class="item">
-                        <img src="img/thegodfather.jpg" alt="thegodfather.jpg">
-                    </div>
-                    <div class="item">
-                        <img src="img/rocky.jpg" alt="rocky.jpg">
-                    </div>
-
-                </div>
-                <!-- Fim Owl Carousel Originais webTV -->
-
-
-            </section>
-            <!--Section End: Originais webTV-->
-
-
-            {{--Fim Originais / Seção Últimas Transmissões--}}
-            <hr class="my-5">
-
-
-
-
             <!--Section: Carousel-->
-            <section class="mb-4 wow fadeIn">
+            <section class="mt-5 wow fadeIn">
 
                 <h1 class="text-center h1-responsive">
                     Últimas transmissões
@@ -273,8 +224,55 @@
             </section>
             <!--Section: Carousel-->
 
-            <br>
-            <br>
+
+            {{--Fim Últimas Transmissões / Seção Originais webTV--}}
+            <hr class="my-5">
+
+            <!--Section: Originais webTV-->
+            <section class="mb-5 wow fadeIn">
+
+                <h1 class="text-center h1-responsive">
+                    Originais FAAC webTV
+                </h1>
+                <br>
+
+                <!--  Owl Carousel Originais webTV -->
+                <div class="owl-carousel owl-theme">
+
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/bladerunner2049.jpg" alt="bladerunner2049">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img src="img/guardiansofthegalaxy.jpg" alt="guardiansofthegalaxy.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/forrestgump.jpg" alt="forrestgump.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/killbill.jpg" alt="killbill.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/starwarsVIII_thelastjedi.jpg" alt="starwarsVIII_thelastjedi.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/thegodfather.jpg" alt="thegodfather.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/rocky.jpg" alt="rocky.jpg">
+                    </div>
+
+                </div>
+                <!-- Fim Owl Carousel Originais webTV -->
+
+
+            </section>
+            <!--Section End: Originais webTV-->
+
+
+
+
 
 
 
