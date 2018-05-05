@@ -67,6 +67,20 @@ class HomeController extends Controller
         return view('modules.solicite');
     }
 
+    public function form_contato()
+    {
+        $user = $this->validate(request(), [
+            'nome' => 'required',
+            'email' => 'required|email',
+            'assunto' => 'required',
+            'mensagem' => 'required',
+        ]);
+
+        return redirect('home');
+
+    }
+
+
     /**
      * Faz logout do user e redireciona para a página inicial
      *
