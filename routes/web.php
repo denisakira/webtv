@@ -19,7 +19,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/contato','HomeController@contato')->name('contato');
 
-Route::post('/contato', 'HomeController@form_contato');
+Route::post('/contato', 'HomeController@mailContato');
 
 Route::get('/sobre','HomeController@sobre')->name('sobre');
 

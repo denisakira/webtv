@@ -4,6 +4,9 @@ namespace webTV\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Mail;
+use webTV\Mail\Contato;
+
 class HomeController extends Controller
 {
     /**
@@ -67,7 +70,7 @@ class HomeController extends Controller
         return view('modules.solicite');
     }
 
-    public function form_contato()
+    public function mailContato()
     {
         $user = $this->validate(request(), [
             'nome' => 'required',
@@ -75,6 +78,8 @@ class HomeController extends Controller
             'assunto' => 'required',
             'mensagem' => 'required',
         ]);
+
+        Mail::to('contato@faacwebtv.com')->send(new Contato($user));
 
         return redirect('home');
 
