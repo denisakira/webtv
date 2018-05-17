@@ -36,6 +36,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
+        $this->middleware('auth');
         $this->middleware('guest');
     }
 
@@ -68,4 +69,23 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+
+    /**
+     * Override do método que mostra a página de Register
+     *
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function showRegistrationForm()
+    {
+        return redirect('/');
+    }
+
+    /**
+     * Override do método que registra usuários
+     */
+    public function register()
+    {
+        return redirect('/');
+    }
+
 }

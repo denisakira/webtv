@@ -34,7 +34,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/admin';
 
     /**
      * Create a new controller instance.
@@ -46,7 +46,11 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-
+    /**
+     * Redireciona para o provedor -> google
+     *
+     * @return Socialite driver
+     */
     public function redirectToProvider()
     {
         return Socialite::driver('google')
@@ -88,8 +92,8 @@ class LoginController extends Controller
     /**
      * If a user has registered before using social auth, return the user
      * else, create a new user object.
+     *
      * @param  $user Socialite user object
-     * @param $provider Social auth provider
      * @return  User
      */
     public function findOrCreateUser($user)

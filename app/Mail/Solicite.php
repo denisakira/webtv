@@ -6,9 +6,8 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use webTV\User;
 
-class Contato extends Mailable
+class Solicite extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -21,7 +20,6 @@ class Contato extends Mailable
      */
     public function __construct(array $user)
     {
-        //
         $this->user = $user;
     }
 
@@ -33,6 +31,7 @@ class Contato extends Mailable
     public function build()
     {
         return $this->from($this->user['email'])
-                    ->markdown('mail.email');
+                    ->subject('Solicitação de Transmissão')
+                    ->markdown('mail.solicite-mail');
     }
 }

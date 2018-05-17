@@ -1,7 +1,7 @@
 @extends('front.master')
 
 @section('content')
-    <div class="bg"></div>
+    <div class="contato-bg"></div>
 
     <!--Main layout-->
     <main>
@@ -19,7 +19,7 @@
                     <section>
 
                         <!--Section heading-->
-                        <h2 class="text-center h1 py-5">Contato</h2>
+                        <h2 class="text-center py-5">Contato</h2>
                         <!--Section description-->
                         {{--<p class="text-center mb-5">texto?</p>--}}
 
@@ -40,7 +40,7 @@
                                         <div class="col-md-6">
                                             <div class="md-form">
                                                 <input required type="text" id="nome" class="form-control" name="nome">
-                                                <label for="nome" class="">Nome</label>
+                                                <label for="nome" class="">Seu nome</label>
                                             </div>
                                         </div>
                                         <!--Grid column-->
@@ -49,7 +49,7 @@
                                         <div class="col-md-6">
                                             <div class="md-form">
                                                 <input required type="email" id="email" class="form-control" name="email">
-                                                <label for="email" class="">E-mail</label>
+                                                <label for="email" class="">Seu email</label>
                                             </div>
                                         </div>
                                         <!--Grid column-->
@@ -85,7 +85,9 @@
                                     <!--Grid row-->
 
                                     <div class="text-center text-md-left">
-                                        <button type="submit" form="contact-form" class="btn btn-primary btn-md">Enviar</button>
+                                        <button type="submit" form="contact-form"
+                                                class="btn btn-primary btn-md">Enviar
+                                        </button>
                                     </div>
 
                                 </form>
@@ -102,10 +104,10 @@
                                         <p>UNESP <br>Av. Eng. Luís Edmundo Carrijo Coube, 14-01<br>Bauru, SP</p>
                                     </li>
 
-                                    <li>
-                                        <i class="fas fa-phone fa-2x mt-4 blue-text"></i>
-                                        <p>+ 01 234 567 89</p>
-                                    </li>
+                                    {{--<li>--}}
+                                        {{--<i class="fas fa-phone fa-2x mt-4 blue-text"></i>--}}
+                                        {{--<p>+ 01 234 567 89</p>--}}
+                                    {{--</li>--}}
 
                                     <li>
                                         <i class="fas fa-envelope fa-2x mt-4 blue-text"></i>
@@ -140,7 +142,7 @@
                     <section class="mt-5 mb-5 wow fadeIn">
 
                         <!--Google map-->
-                        <div id="map-container" class="z-depth-1-half" style="height: 300px; width: 770px">
+                        <div id="map-container" class="z-depth-1-half">
 
                             <iframe width=100% height=100% frameborder="0" style="border:0" align="middle"
                                     src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ7cFzrftdv5QRIC0YG50JyG4&key=AIzaSyDRkjsk8jzX6ruHnuIy0wGJI0I2sbg0sLQ" allowfullscreen>

@@ -4,7 +4,6 @@ namespace webTV\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use Illuminate\Support\Facades\Mail;
 use webTV\Mail\Contato;
 
 class HomeController extends Controller
@@ -16,7 +15,6 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        //$this->middleware('auth');
     }
 
     /**
@@ -70,31 +68,15 @@ class HomeController extends Controller
         return view('modules.solicite');
     }
 
-    public function mailContato()
-    {
-        $user = $this->validate(request(), [
-            'nome' => 'required',
-            'email' => 'required|email',
-            'assunto' => 'required',
-            'mensagem' => 'required',
-        ]);
-
-        Mail::to('contato@faacwebtv.com')->send(new Contato($user));
-
-        return redirect('home');
-
-    }
-
-
-    /**
-     * Faz logout do user e redireciona para a página inicial
+    /**Retorna a view modules/membros-atuais
      *
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function logout(){
-        auth()->logout();
-
-        return redirect('home');
-
+    public function atuais()
+    {
+        return view('modules.membros-atuais');
     }
+
+
+
 }

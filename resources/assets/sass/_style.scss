@@ -12,7 +12,7 @@ h1 {
   background-image: url("/img/bg.jpg");
 
   /* Full height */
-  height: 60%;
+  height: 50%;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -28,11 +28,11 @@ h1 {
 /* Full Page Carousel itself*/
 .carousel {
   height: 100%; }
-  .carousel .carousel-inner {
-    height: 100%; }
-    .carousel .carousel-inner .carousel-item,
-    .carousel .carousel-inner .active {
-      height: 100%; }
+.carousel .carousel-inner {
+  height: 100%; }
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active {
+  height: 100%; }
 
 /* Navbar animation */
 .navbar {
@@ -40,16 +40,6 @@ h1 {
 
 .top-nav-collapse {
   background-color: #1C2331; }
-
-/* Adding color to the Navbar on mobile */
-@media only screen and (max-width: 768px) {
-  .navbar {
-    background-color: #1C2331; }
-
-  #map-container{
-    width: 100%;
-  }
-}
 
 /* Footer color for sake of consistency with Navbar */
 .page-footer {
