@@ -28,7 +28,7 @@
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="/sobre">A FAAC WEBTV</a>
                         <a class="dropdown-item" href="/membros-atuais">MEMBROS ATUAIS</a>
-                        <a class="dropdown-item" href="#">MEMBROS ANTIGOS</a>
+                        <a class="dropdown-item" href="/membros-antigos">MEMBROS ANTIGOS</a>
                     </div>
                 </li>
                 <li class="nav-item">

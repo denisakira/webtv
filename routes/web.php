@@ -31,6 +31,7 @@ Route::post('/solicite', 'MailController@mailSolicite');
 
 Route::get('/membros-atuais', 'HomeController@atuais')->name('membros-atuais');
 
+Route::get('/membros-antigos','HomeController@antigos')->name('membros-antigos');
 
 //Sistema
 

@@ -71,25 +71,25 @@
                         </h2>
 
                         <!-- Nome do evento-->
-                        <label for="evento" class="grey-text">Nome do Evento ou Atividade</label>
+                        <label for="evento" class="stylish-color-text">Nome do Evento ou Atividade</label>
                         <input type="text" id="evento" name="evento" class="form-control">
 
                         <br>
 
                         <!-- Nome do responsável pela organização do evento -->
-                        <label for="responsavel" class="grey-text">Nome do responsável pela organização do evento</label>
+                        <label for="responsavel" class="stylish-color-text">Nome do responsável pela organização do evento</label>
                         <input type="text" id="responsavel" name="responsavel" class="form-control">
 
                         <br>
 
                         <!-- E-mail do responsável -->
-                        <label for="email" class="grey-text">E-mail do responsável:</label>
+                        <label for="email" class="stylish-color-text">E-mail do responsável:</label>
                         <input type="email" id="email" name="email" class="form-control">
 
                         <br>
 
                         <!-- Vínculo do responsável pelo evento com a UNESP -->
-                        <label for="selectDropdown" class="grey-text">Papel na Faculdade</label>
+                        <label for="selectDropdown" class="stylish-color-text">Papel na Faculdade</label>
                         <select class="form-control" id="selectDropdown" name="vinculo-unesp">
                             <option>Professor efetivo (Assistente,
                             Adjunto ou Titular)</option>
@@ -103,7 +103,7 @@
 
                         <!-- Vínculo do responsável (Faculdade, Departamento,
                         Curso ou Programa de Pós-graduação) -->
-                        <label for="vinculo" class="grey-text">Vínculo do responsável (Faculdade, Departamento,
+                        <label for="vinculo" class="stylish-color-text">Vínculo do responsável (Faculdade, Departamento,
                             Curso ou Programa de Pós-graduação)</label>
                         <input type="text" id="vinculo" name="vinculo" class="form-control">
 
@@ -111,7 +111,7 @@
                         <br>
 
                         <!-- Default textarea message -->
-                        <label for="descricao" class="grey-text">
+                        <label for="descricao" class="stylish-color-text">
                             Descrição do Evento (finalidade, cursos envolvidos, temática, público alvo, etc):
                         </label>
                         <textarea type="text" name="descricao" id="descricao"
@@ -120,38 +120,38 @@
                         <br>
 
                         <!-- Data do Evento -->
-                        <label for="data" class="grey-text">Data do Evento</label>
+                        <label for="data" class="stylish-color-text">Data do Evento</label>
                         <input type="date" id="data" name="data" class="form-control">
 
                         <br>
 
                         <!-- Horário de Início -->
-                        <label for="hora-ini" class="grey-text">Horário de Início</label>
+                        <label for="hora-ini" class="stylish-color-text">Horário de Início</label>
                         <input type="time" id="hora-ini" name="hora-ini" class="form-control">
 
                         <br>
 
                         <!-- Horário de Término -->
-                        <label for="hora-fim" class="grey-text">Horário de Início</label>
+                        <label for="hora-fim" class="stylish-color-text">Horário de Início</label>
                         <input type="time" id="hora-fim" name="hora-fim" class="form-control">
 
                         <br>
 
                         <!-- Local do Evento -->
-                        <label for="local" class="grey-text">Local do Evento</label>
+                        <label for="local" class="stylish-color-text">Local do Evento</label>
                         <input type="text" id="local" name="local" class="form-control">
 
                         <br>
 
                         <!-- O evento tem site ou link nas redes sociais? Quais? -->
-                        <label for="redes" class="grey-text">O evento tem site ou link nas redes sociais? Quais?
+                        <label for="redes" class="stylish-color-text">O evento tem site ou link nas redes sociais? Quais?
                         </label>
                         <input type="text" id="redes" name="redes" class="form-control">
 
                         <br>
 
                         <!-- O que você gostaria? -->
-                        <label for="escolhaDropdown" class="grey-text">O que você gostaria?</label>
+                        <label for="escolhaDropdown" class="stylish-color-text">O que você gostaria?</label>
                         <select class="form-control" id="escolhaDropdown" name="escolha"
                             onchange = "if ($('#escolhaDropdown').val() == 'Outro') {
                                 $('#outro').show();
@@ -169,7 +169,7 @@
                         <br>
 
                         <!-- Outro -->
-                        <label for="outro" id="outroLabel" class="grey-text">Outro</label>
+                        <label for="outro" id="outroLabel" class="stylish-color-text">Outro</label>
                         <input type="text" id="outro" name="outro" class="form-control">
 
                         <!-- Send Button -->
