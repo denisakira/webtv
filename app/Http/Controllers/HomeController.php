@@ -4,6 +4,11 @@ namespace webTV\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use webTV\Mail\Contato;
+
+use webTV\MembrosAntigos;
+use webTV\MembrosAtuais;
+
 class HomeController extends Controller
 {
     /**
@@ -13,7 +18,6 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        //$this->middleware('auth');
     }
 
     /**
@@ -67,29 +71,30 @@ class HomeController extends Controller
         return view('modules.solicite');
     }
 
-    public function form_contato()
-    {
-        $user = $this->validate(request(), [
-            'nome' => 'required',
-            'email' => 'required|email',
-            'assunto' => 'required',
-            'mensagem' => 'required',
-        ]);
-
-        return redirect('home');
-
-    }
-
-
-    /**
-     * Faz logout do user e redireciona para a página inicial
+    /**Retorna a view modules/membros-atuais
      *
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @param MembrosAtuais $atuais
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function logout(){
-        auth()->logout();
+    public function atuais(MembrosAtuais $atuais)
+    {
+        $atuais = $atuais->all();
 
-        return redirect('home');
-
+        return view('modules.membros-atuais', compact('atuais'));
     }
+
+    /**Retorna a view modules/membros-antigos
+     *
+     * @param MembrosAntigos $antigos
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function antigos(MembrosAntigos $antigos)
+    {
+        $antigos = $antigos->all();
+
+        return view('modules.membros-antigos', compact('antigos'));
+    }
+
+
+
 }

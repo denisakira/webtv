@@ -36,8 +36,12 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
+
+    {{--Custom SCSS asset--}}
+    <link rel="stylesheet" href="css/app.css">
+
     <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
+    {{--<link href="css/style.css" rel="stylesheet">--}}
 
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -108,6 +112,12 @@
     })
 
 
+</script>
+<script>
+    $(document).ready(function(){
+        $("#outro").hide();
+        $('#outroLabel').hide();
+    });
 </script>
 </body>
 

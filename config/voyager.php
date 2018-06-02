@@ -14,7 +14,7 @@ return [
         'add_default_role_on_register' => true,
         'default_role'                 => 'user',
         'namespace'                    => webTV\User::class,
-        'default_avatar'               => 'users/logo_novo.png',
+        'default_avatar'               => 'users/logo.png',
     ],
 
     /*
@@ -169,6 +169,7 @@ return [
             //'TCG\\Voyager\\Widgets\\UserDimmer',
             //'TCG\\Voyager\\Widgets\\PostDimmer',
             '\webTV\\Widgets\\EventosWidget',
+            '\webTV\\Widgets\\EquipWidget',
         ],
 
     ],

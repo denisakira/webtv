@@ -5,5 +5,48 @@
 // Variables
 @import "variables";
 
-// Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+//style.css
+@import "style";
+
+%bg-layout {
+  /* Full height */
+  height: 40%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg{
+  @extend %bg-layout;
+    /* The image used */
+  background-image: url("/img/bg.jpg");
+
+}
+
+.contato-bg{
+  @extend %bg-layout;
+  /* The image used */
+  background-image: url("/img/contato.jpg");
+}
+
+//Medias
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331; }
+
+  #map-container{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .navbar {
+    background-color: #1C2331; }
+
+  #map-container{
+    width: 80%;
+  }
+}

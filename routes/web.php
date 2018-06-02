@@ -19,7 +19,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/contato','HomeController@contato')->name('contato');
 
-Route::post('/contato', 'HomeController@form_contato');
+Route::post('/contato', 'MailController@mailContato');
 
 Route::get('/sobre','HomeController@sobre')->name('sobre');
 
@@ -27,10 +27,20 @@ Route::get('/sistema','HomeController@sistema')->name('sistema');
 
 Route::get('/solicite','HomeController@solicite')->name('solicite');
 
-Route::get('/logout', 'HomeController@logout');
+Route::post('/solicite', 'MailController@mailSolicite');
 
+Route::get('/membros-atuais', 'HomeController@atuais')->name('membros-atuais');
 
-Auth::routes();
+Route::get('/membros-antigos','HomeController@antigos')->name('membros-antigos');
+
+//Sistema
+
+//Route::post('/logout', 'VoyagerAuthController@logout');
+
+//Auth::routes();
+
+//Override login
+Route::get('/login', 'Auth\LoginController@redirectToProvider');
 
 
 //Socialite
@@ -38,8 +48,8 @@ Route::get('login/google', 'Auth\LoginController@redirectToProvider');
 
 Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallback');
 
-
 //VOYAGER
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+

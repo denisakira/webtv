@@ -27,8 +27,8 @@
                     </a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="/sobre">A FAAC WEBTV</a>
-                        <a class="dropdown-item" href="#">MEMBROS ATUAIS</a>
-                        <a class="dropdown-item" href="#">MEMBROS ANTIGOS</a>
+                        <a class="dropdown-item" href="/membros-atuais">MEMBROS ATUAIS</a>
+                        <a class="dropdown-item" href="/membros-antigos">MEMBROS ANTIGOS</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -38,8 +38,46 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/contato">CONTATO</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">TRANSMISSÕES</a>
+                <li class="nav-item dropdown btn-group">
+                    <a class="nav-link dropdown-toggle" id="tx-dropdown"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        TRANSMISSÕES
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="tx-dropdown">
+                        <div class="px-5">
+
+                            <div class="container-fluid">
+
+                                <div class="row">
+                                    <ul class="list-unstyled col-md-6 px-3">
+                                       <li>
+                                           <a class="dropdown-item" href="/sobre"><i class="fab fa-angular fa-2x"></i></a>
+                                       </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">MEMBROS ATUAIS</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">MEMBROS ANTIGOS</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled col-md-6 px-3">
+                                       <li>
+                                           <a class="dropdown-item" href="/sobre"><i class="fab fa-angular fa-2x"></i></a>
+                                       </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">MEMBROS ATUAIS</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">MEMBROS ANTIGOS</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </li>
 
             </ul>
@@ -74,3 +112,6 @@
     </div>
 </nav>
 <!-- Navbar -->
+
+
+

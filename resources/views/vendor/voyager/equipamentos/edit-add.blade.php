@@ -36,7 +36,7 @@
                                 @if(!is_null(QrCode::format('png')->size(200)
                                 ->generate(url(Request::url()),"img/qr.png")))
                                     <h4>
-                                        QR Code gerado!
+                                        QR Code
                                     </h4>
                                     <img src="{{ url("img/qr.png") }}">
                                     <hr>

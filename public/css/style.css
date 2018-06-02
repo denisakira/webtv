@@ -20,6 +20,10 @@ h1 {
   background-size: cover;
 }
 
+#map-container{
+  height: 300px;
+  width: 770px
+}
 
 /* Full Page Carousel itself*/
 .carousel {
@@ -40,7 +44,12 @@ h1 {
 /* Adding color to the Navbar on mobile */
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color: #1C2331; } }
+    background-color: #1C2331; }
+
+  #map-container{
+    width: 100%;
+  }
+}
 
 /* Footer color for sake of consistency with Navbar */
 .page-footer {

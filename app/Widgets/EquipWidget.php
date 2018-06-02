@@ -5,9 +5,10 @@ namespace webTV\Widgets;
 use Arrilot\Widgets\AbstractWidget;
 use Illuminate\Support\Str;
 use TCG\Voyager\Facades\Voyager;
+use webTV\Equipamento;
 use webTV\Evento as Evento;
 
-class EventosWidget extends AbstractWidget
+class EquipWidget extends AbstractWidget
 {
     /**
      * The configuration array.
@@ -22,18 +23,18 @@ class EventosWidget extends AbstractWidget
      */
     public function run()
     {
-        $count = Evento::count();
-        $string = "Eventos";
+        $count = Equipamento::count();
+        $string = "Equipamentos";
 
         return view('voyager::dimmer', array_merge($this->config, [
-            'icon'   => 'voyager-group',
+            'icon'   => 'voyager-video',
             'title'  => "{$count} {$string}",
-            'text'   => "Eventos",
+            'text'   => "Equipamentos",
             'button' => [
                 'text' => 'Ver todos',
-                'link' => route('voyager.eventos.index'),
+                'link' => route('voyager.equipamentos.index'),
             ],
-            'image' => '/img/evento-bg.jpg',
+            'image' => '/img/equip.png',
         ]));
     }
 }
