@@ -21,6 +21,7 @@
 
 @section('content')
     <div class="page-content browse container-fluid">
+    
         @include('voyager::alerts')
         <div class="row">
             <div class="col-md-12">
@@ -49,6 +50,7 @@
                                 </div>
                             </form>
                         @endif
+                        
                         <div class="table-responsive">
                             <table id="dataTable" class="table table-hover">
                                 <thead>
