@@ -78,14 +78,15 @@
                                 @endif
                             @endforeach
 
-                            @include('modules.eventosMap')
-
                         </div><!-- panel-body -->
 
                         <div class="panel-footer">
                             <button type="submit" class="btn btn-primary save">{{ __('voyager.generic.save') }}</button>
                         </div>
                     </form>
+
+                    @include('modules.eventosMap')
+
 
                     <iframe id="form_target" name="form_target" style="display:none"></iframe>
                     <form id="my_form" action="{{ route('voyager.upload') }}" target="form_target" method="post"
