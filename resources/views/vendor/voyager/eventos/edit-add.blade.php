@@ -78,6 +78,8 @@
                                 @endif
                             @endforeach
 
+                            @include('modules.eventosMap')
+
                         </div><!-- panel-body -->
 
                         <div class="panel-footer">
@@ -85,7 +87,6 @@
                         </div>
                     </form>
 
-                    @include('modules.eventosMap')
 
 
                     <iframe id="form_target" name="form_target" style="display:none"></iframe>

@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="bg"></div>
+    <div class="production-bg"></div>
 
     <main>
 
@@ -17,11 +17,9 @@
                     {{--Section Briefing--}}
                     <section class="mt-5 wow fadeIn">
 
-                        <h2 class="text-center">
+                        <h2 class="text-center mb-5">
                             Briefing: Transmissão / Cobertura de Eventos
                         </h2>
-
-                        <br>
 
                         <p>
                             Olá :) Esse é o formulário da FAAC webTV para solicitação de transmissões e/ou cobertura de eventos.
@@ -66,7 +64,7 @@
                     <form action="/solicite" method="post" id="tx-form">
                         {{ csrf_field() }}
 
-                        <h2 class="text-center">
+                        <h2 class="text-center mb-5">
                             Formulário de Briefing
                         </h2>
 

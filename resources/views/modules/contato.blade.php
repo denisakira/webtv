@@ -20,8 +20,6 @@
 
                         <!--Section heading-->
                         <h2 class="text-center py-5">Contato</h2>
-                        <!--Section description-->
-                        {{--<p class="text-center mb-5">texto?</p>--}}
 
                         @include('front.errors')
 
@@ -97,20 +95,20 @@
                             <!--Grid column-->
 
                             <!--Grid column-->
-                            <div class="col-md-4 col-xl-3 text-center">
+                            <div class="col-md-4 col-xl-3 text-center mt-5">
                                 <ul class="list-unstyled">
                                     <li>
-                                        <i class="fas fa-map-marker fa-2x blue-text"></i>
+                                        <i class="fas fa-map-marker fa-2x red-text"></i>
                                         <p>UNESP <br>Av. Eng. Luís Edmundo Carrijo Coube, 14-01<br>Bauru, SP</p>
                                     </li>
 
                                     {{--<li>--}}
-                                        {{--<i class="fas fa-phone fa-2x mt-4 blue-text"></i>--}}
+                                        {{--<i class="fas fa-phone fa-2x mt-4 red-text"></i>--}}
                                         {{--<p>+ 01 234 567 89</p>--}}
                                     {{--</li>--}}
 
                                     <li>
-                                        <i class="fas fa-envelope fa-2x mt-4 blue-text"></i>
+                                        <i class="fas fa-envelope fa-2x mt-4 red-text"></i>
                                         <p>producao@faacwebtv.com.br</p>
                                     </li>
                                 </ul>

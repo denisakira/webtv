@@ -1,16 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/* Required height of parents of the Full Page Carousel for proper displaying carousel itself */
-
-html,
-body,
-.view {
-  height: 100%;
-}
-
-h1 {
-  font-family: 'Lobster', cursive;
-}
-
-#map-container {
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@import url(https://fonts.googleapis.com/css?family=Lato);@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab);#map-container {
   height: 300px;
   width: 770px;
 }
@@ -46,8 +34,22 @@ h1 {
   background-color: #1C2331;
 }
 
+/* Required height of parents of the Full Page Carousel for proper displaying carousel itself */
+
+html,
+body,
+.view {
+  height: 100%;
+}
+
+h1,
+h2 {
+  font-family: 'Roboto Slab', serif;
+}
+
 .bg,
-.contato-bg {
+.contato-bg,
+.production-bg {
   /* Full height */
   height: 40%;
   /* Center and scale the image nicely */
@@ -57,13 +59,19 @@ h1 {
 }
 
 .bg {
-  /* The image used */
   background-image: url("/img/bg.jpg");
 }
 
 .contato-bg {
-  /* The image used */
-  background-image: url("/img/contato.jpg");
+  background-image: url("/img/mailbox3-opt.jpg");
+}
+
+.production-bg {
+  background-image: url("/img/production-opt.jpg");
+}
+
+.footer-denisdj {
+  padding: 1em;
 }
 
 /* Adding color to the Navbar on mobile */

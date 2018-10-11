@@ -1,18 +1,23 @@
 <template>
   <div class="container">
     <div>
+
       <div class="accent-1">
         Mapa
       </div>
 
-      <label>
+      <label class="label--location">
         <gmap-autocomplete 
-          class="form--location" 
+          class="form--location form-control" 
           @place_changed="setPlace"
-        >
-        </gmap-autocomplete>
-        <button @click="addMarker">Adicionar</button>
+        ></gmap-autocomplete>
+        <button 
+          class="btn--location btn btn-primary"
+          @click="addMarker"
+          type="button"
+        >Adicionar</button>
       </label>
+
     </div>
 
     <br>
@@ -23,13 +28,15 @@
       style="width:100%;  height: 400px;"
     >  
       <gmap-marker 
-        :key="index" 
         v-for="(m, index) in markers" 
-        :position="m.position" :draggable="true" 
+        :key="index" 
+        :position="m.position" 
+        :draggable="true" 
         @click="center=m.position"
-        @dragend="markerChange"
+        @drag="markerChange"
       ></gmap-marker>
     </gmap-map>
+  
   </div>
 </template>
 
@@ -46,7 +53,8 @@ export default {
       },
       markers: [],
       places: [],
-      currentPlace: null
+      currentPlace: null,
+      coordinates: null
     };
   },
   mounted() {
@@ -79,8 +87,14 @@ export default {
         };
       });
     },
-    markerChange() {
-      console.log(this.markers);
+    markerChange(location) {
+      this.coordinates = {
+        lat: location.latLng.lat(),
+        lng: location.latLng.lng()
+      };
+      this.markers.push({
+        position: this.coordinates
+      });
     }
   }
 };
@@ -88,9 +102,19 @@ export default {
 
 <style scoped <style lang="scss" scoped>
 .container {
-  padding: 0.3em;
+  padding: 0.5em;
+
+  .label--location {
+    display: flex;
+    flex-direction: column;
+  }
+
   .form--location {
-    width: 1000px;
+    flex: 6;
+  }
+
+  .btn--location {
+    flex: 1;
   }
 }
 </style>
