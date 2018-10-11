@@ -78,7 +78,7 @@
                                 @endif
                             @endforeach
 
-                            @include('modules.eventosMap')
+                            @include('modules.eventMap')
 
                         </div><!-- panel-body -->
 
