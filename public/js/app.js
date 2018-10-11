@@ -44429,9 +44429,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         lat: location.latLng.lat(),
         lng: location.latLng.lng()
       };
-      this.markers.push({
-        position: this.coordinates
-      });
+      // this.markers.push({
+      //   position: this.coordinates
+      // });
     }
   }
 });

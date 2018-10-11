@@ -92,9 +92,9 @@ export default {
         lat: location.latLng.lat(),
         lng: location.latLng.lng()
       };
-      this.markers.push({
-        position: this.coordinates
-      });
+      // this.markers.push({
+      //   position: this.coordinates
+      // });
     }
   }
 };
