@@ -32,7 +32,7 @@ class EquipWidget extends AbstractWidget
             'text'   => "Equipamentos",
             'button' => [
                 'text' => 'Ver todos',
-                'link' => route('voyager.equipamentos.index'),
+                'link' => route('home'),
             ],
             'image' => '/img/equip.png',
         ]));

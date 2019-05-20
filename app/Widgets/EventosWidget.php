@@ -31,7 +31,7 @@ class EventosWidget extends AbstractWidget
             'text'   => "Eventos",
             'button' => [
                 'text' => 'Ver todos',
-                'link' => route('voyager.eventos.index'),
+                'link' => route('home'),
             ],
             'image' => '/img/evento-bg.jpg',
         ]));

@@ -1,53 +1,32 @@
-
 <!--Footer-->
-<footer class="page-footer font-small indigo pt-0">
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
 
-    <!--Footer Links-->
-    <div class="container">
+    <!--Call to action-->
+    <!-- <div class="pt-4">
+      <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Download MDB
+        <i class="fa fa-download ml-2"></i>
+      </a>
+      <a class="btn btn-outline-white" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank" role="button">Start free tutorial
+        <i class="fa fa-graduation-cap ml-2"></i>
+      </a>
+    </div> -->
+    <!--/.Call to action-->
 
-        <!--First row-->
-        <div class="row">
 
-            <!--First column-->
-            <div class="col-md-12 py-5">
 
-                <div class="mb-5 flex-center">
+    <hr class="my-4">
 
-                    <!--Facebook-->
-                    <a class="fb-ic">
-                        <i class="fab fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <!--Twitter-->
-                    <a class="tw-ic">
-                        <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <!--Google +-->
-                    <a class="gplus-ic">
-                        <i class="fab fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <!--Linkedin-->
-                    <a class="li-ic">
-                        <i class="fab fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <!--Instagram-->
-                    <a class="ins-ic">
-                        <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                </div>
-            </div>
-            <!--/First column-->
-        </div>
-        <!--/First row-->
-    </div>
-    <!--/Footer Links-->
+    {{--Social Icons--}}
+    @include('layouts.social')
 
     <!--Copyright-->
-    <div class="footer-copyright py-3 text-center">
-        © 2018 Copyright:
-        <a href="#"> FAAC webTV </a>
+    <div class="footer-copyright py-3">
+        © 2018 Copyright: FAAC webTV
+        <br>
+        Desenvolvido por:
+        <a href="#" target="_blank"> Denis Akira</a>
     </div>
-    <!--/Copyright-->
+    <!--/.Copyright-->
 
 </footer>
-<!--/Footer-->
-                        
+<!--/.Footer-->

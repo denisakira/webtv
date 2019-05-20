@@ -1,4 +1,4 @@
-@extends('front.master')
+@extends('layouts.master')
 
 @section('content')
     <div class="bg"></div>
