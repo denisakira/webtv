@@ -1,0 +1,66 @@
+version: '3'
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: ./docker/app.dockerfile
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www
+    environment:
+      - "DB_PORT=3306"
+      - "DB_HOST=database"
+    networks:
+      - network
+
+  web:
+    build:
+      context: ./
+      dockerfile: ./docker/web.dockerfile
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www
+    ports:
+      - 8082:80
+    networks:
+      - network
+
+  database:
+    image: mysql:5.7
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./docker/dbdata:/var/lib/mysql
+      - ./docker/mysql.cnf:/etc/mysql/conf.d/mysql.cnf
+    environment:
+      - "MYSQL_DATABASE=webtv"
+      - "MYSQL_USER=homestead"
+      - "MYSQL_PASSWORD=secret"
+      - "MYSQL_ROOT_PASSWORD=secret"
+    ports:
+      - "33062:3306"
+    networks:
+      - network
+
+  dbadmin:
+    image: adminer
+    volumes:
+      - ./docker/adminer/adminer.css:/var/www/html/adminer.css
+    links:
+      - database
+    ports:
+      - 8085:8080
+    environment:
+      - "PMA_HOST=database"
+      - "PMA_PORT=3306"
+      - "MYSQL_USER=homestead"
+      - "MYSQL_PASSWORD=secret"
+      - "MYSQL_ROOT_PASSWORD=secret"
+    networks:
+      - network
+
+volumes:
+  dbdata:
+
+networks:
+  network:
+    driver: bridge
