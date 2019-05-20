@@ -5,6 +5,8 @@ namespace webTV;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
+use webTV\Models\Evento;
+
 class User extends \TCG\Voyager\Models\User
 {
     use Notifiable;
@@ -27,6 +29,11 @@ class User extends \TCG\Voyager\Models\User
         'password', 'remember_token',
     ];
 
+    /**
+     * Relação com evento
+     *
+     * @return hasMany
+     */
     public function evento() {
         return $this->hasMany(Evento::class);
     }

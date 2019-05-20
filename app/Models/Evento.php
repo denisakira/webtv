@@ -1,10 +1,10 @@
 <?php
 
-namespace webTV;
+namespace webTV\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-use webTV\Equipamento;
+use webTV\Models\Equipamento;
 
 use webTV\User;
 
@@ -17,11 +17,6 @@ class Evento extends Model
 
     public function equipamento()
     {
-        # code...
         return $this->hasMany(Equipamento::class);
     }
-
-    // public function equipamentoId() {
-    //     return $this->hasMany(Equipamento::class, "equipamento_id");
-    // }
 }

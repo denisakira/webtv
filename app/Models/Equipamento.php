@@ -1,10 +1,10 @@
 <?php
 
-namespace webTV;
+namespace webTV\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-use webTV\Evento;
+use webTV\Models\Evento;
 
 class Equipamento extends Model
 {
@@ -12,8 +12,4 @@ class Equipamento extends Model
     public function evento() {
         return $this->belongsTo(Evento::class);
     }
-
-    // public function eventoId() {
-    //     return $this->belongsTo(Evento::class, "evento_id");
-    // }
 }

@@ -5,7 +5,7 @@ namespace webTV\Widgets;
 use Arrilot\Widgets\AbstractWidget;
 use Illuminate\Support\Str;
 use TCG\Voyager\Facades\Voyager;
-use webTV\Evento as Evento;
+use webTV\Models\Evento as Evento;
 
 class EventosWidget extends AbstractWidget
 {
