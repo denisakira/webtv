@@ -11,3 +11,5 @@ npm-debug.log
 yarn-error.log
 .env
 detalheVoyagerService.txt
+
+/docker/dbdata
