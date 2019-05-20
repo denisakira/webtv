@@ -168,8 +168,8 @@ return [
         'widgets' => [
             //'TCG\\Voyager\\Widgets\\UserDimmer',
             //'TCG\\Voyager\\Widgets\\PostDimmer',
-            '\webTV\\Widgets\\EventosWidget',
-            '\webTV\\Widgets\\EquipWidget',
+            // '\webTV\\Widgets\\EventosWidget',
+            // '\webTV\\Widgets\\EquipWidget',
         ],
 
     ],

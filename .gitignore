@@ -12,4 +12,5 @@ yarn-error.log
 .env
 detalheVoyagerService.txt
 
-/docker/dbdata
+docker/dbdata
+.vscode

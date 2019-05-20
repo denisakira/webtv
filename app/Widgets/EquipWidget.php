@@ -5,8 +5,8 @@ namespace webTV\Widgets;
 use Arrilot\Widgets\AbstractWidget;
 use Illuminate\Support\Str;
 use TCG\Voyager\Facades\Voyager;
-use webTV\Equipamento;
-use webTV\Evento as Evento;
+use webTV\Models\Equipamento;
+use webTV\Models\Evento as Evento;
 
 class EquipWidget extends AbstractWidget
 {
@@ -32,7 +32,7 @@ class EquipWidget extends AbstractWidget
             'text'   => "Equipamentos",
             'button' => [
                 'text' => 'Ver todos',
-                'link' => route('voyager.equipamentos.index'),
+                'link' => route('home'),
             ],
             'image' => '/img/equip.png',
         ]));

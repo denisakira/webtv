@@ -1,6 +1,6 @@
 <?php
 
-namespace webTV;
+namespace webTV\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

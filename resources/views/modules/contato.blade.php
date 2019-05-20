@@ -1,4 +1,4 @@
-@extends('front.master')
+@extends('layouts.master')
 
 @section('content')
     <div class="contato-bg"></div>
@@ -23,7 +23,7 @@
                         <!--Section description-->
                         {{--<p class="text-center mb-5">texto?</p>--}}
 
-                        @include('front.errors')
+                        @include('layouts.errors')
 
                         <div class="row">
 

@@ -71,26 +71,28 @@ class HomeController extends Controller
         return view('modules.solicite');
     }
 
-    /**Retorna a view modules/membros-atuais
+    /**
+     * Retorna a view modules/membros-atuais
      *
      * @param MembrosAtuais $atuais
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function atuais(MembrosAtuais $atuais)
     {
-        $atuais = $atuais->all();
+        // $atuais = $atuais->all();
 
         return view('modules.membros-atuais', compact('atuais'));
     }
 
-    /**Retorna a view modules/membros-antigos
+    /**
+     * Retorna a view modules/membros-antigos
      *
      * @param MembrosAntigos $antigos
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function antigos(MembrosAntigos $antigos)
     {
-        $antigos = $antigos->all();
+        // $antigos = $antigos->all();
 
         return view('modules.membros-antigos', compact('antigos'));
     }

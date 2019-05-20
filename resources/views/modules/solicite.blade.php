@@ -1,4 +1,4 @@
-@extends('front.master')
+@extends('layouts.master')
 
 @section('content')
 
@@ -55,7 +55,7 @@
 
             <hr class="my-5">
 
-            @include('front.errors')
+            @include('layouts.errors')
 
             {{--Row--}}
             <div class="row">

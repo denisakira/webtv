@@ -23,8 +23,6 @@ Route::post('/contato', 'MailController@mailContato');
 
 Route::get('/sobre','HomeController@sobre')->name('sobre');
 
-Route::get('/sistema','HomeController@sistema')->name('sistema');
-
 Route::get('/solicite','HomeController@solicite')->name('solicite');
 
 Route::post('/solicite', 'MailController@mailSolicite');

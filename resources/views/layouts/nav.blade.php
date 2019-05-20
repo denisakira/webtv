@@ -1,117 +1,117 @@
-<div class="collapse navbar-dark primary-color" id="navbarHeader">
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-                <h4 class="text-white">About</h4>
-                <p class="text-white">
-                    FAAC webTV
-                </p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-                <h4 class="text-white">Contact</h4>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                    <li><a href="#" class="text-white">Like on Facebook</a></li>
-                    <li><a href="#" class="text-white">Email me</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-@if (Auth::check())
 
-    <div class="navbar navbar-dark primary-color">
-        <div class="container d-flex justify-content-between">
-            <a href="/" class="navbar-brand d-flex align-items-center">
-                <strong>FAAC webTV</strong>
-            </a>
-            <a class="white-text" href="/admin">
-                <strong>
-                    Admin
-                </strong>
-            </a>
-            <a class="white-text" href="/logout">
-                <strong>
-                    Logout
-                </strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </div>
+        <!-- Brand -->
+        <a class="navbar-brand" href="home">
+            <!-- <strong>FAAC webTV</strong> -->
+            <img style="height: 2.4em;" src="img/logo_novo.png" alt="logo">
+        </a>
 
-@else
-    <div class="navbar navbar-dark primary-color">
-        <div class="container d-flex justify-content-between">
-            <a href="/" class="navbar-brand d-flex align-items-center">
-                <strong>FAAC webTV</strong>
-            </a>
-            <a class="white-text" href="/admin">
-                <strong>Admin</strong>
-            </a>
-            <a class="white-text" href="/login">
-                <strong>Login</strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </div>
-
-@endif
-
-{{--  --}}
-{{-- 
-<!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark primary-color">
-
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">Navbar</a>
-
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="basicExampleNav">
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
         <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                    <span class="sr-only">(current)</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
+            <!-- Left -->
+            <ul class="navbar-nav mr-auto">
 
-        </ul>
-        <!-- Links -->
+                <li class="nav-item dropdown transparent">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        QUEM SOMOS
+                    </a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/sobre">A FAAC WEBTV</a>
+                        <a class="dropdown-item" href="/membros-atuais">MEMBROS ATUAIS</a>
+                        <a class="dropdown-item" href="/membros-antigos">MEMBROS ANTIGOS</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/solicite">SOLICITE UMA TRANSMISSÃO</a>
+                </li>
 
-        <form class="form-inline">
-            <div class="md-form mt-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            </div>
-        </form>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contato">CONTATO</a>
+                </li>
+                <li class="nav-item dropdown btn-group">
+                    <a class="nav-link dropdown-toggle" id="tx-dropdown"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        TRANSMISSÕES
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="tx-dropdown">
+                        <div class="px-5">
+
+                            <div class="container-fluid">
+
+                                <div class="row">
+                                    <ul class="list-unstyled col-md-6 px-3">
+                                       <li>
+                                           <a class="dropdown-item" href="/sobre"><i class="fab fa-angular fa-2x"></i></a>
+                                       </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">MEMBROS ATUAIS</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">MEMBROS ANTIGOS</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled col-md-6 px-3">
+                                       <li>
+                                           <a class="dropdown-item" href="/sobre"><i class="fab fa-angular fa-2x"></i></a>
+                                       </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">MEMBROS ATUAIS</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">MEMBROS ANTIGOS</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+
+            </ul>
+
+            <!-- Right -->
+            <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <a href="https://facebook.com/faacwebtv/" class="nav-link" target="_blank">
+                        <i class="fab fa-facebook fa-lg"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://twitter.com/faacwebtv" class="nav-link" target="_blank">
+                        <i class="fab fa-twitter fa-lg"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/faacwebtv/" class="nav-link" target="_blank">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.youtube.com/channel/UC12PbltmUTaYm4RiRMK2WNA" class="nav-link" target="_blank">
+                        <i class="fab fa-lg fa-youtube"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
     </div>
-    <!-- Collapsible content -->
-
 </nav>
-<!--/.Navbar--> --}}
+<!-- Navbar -->
+
+
+
