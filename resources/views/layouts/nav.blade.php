@@ -5,7 +5,7 @@
         <!-- Brand -->
         <a class="navbar-brand" href="home">
             <!-- <strong>FAAC webTV</strong> -->
-            <img style="height: 2.4em;" src="img/logo_novo.png" alt="logo">
+            <img style="height: 2.4em;" class="navbar-logo" src="img/logo_novo.png" alt="logo">
         </a>
 
         <!-- Collapse -->
@@ -28,56 +28,19 @@
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="/sobre">A FAAC WEBTV</a>
                         <a class="dropdown-item" href="/membros-atuais">MEMBROS ATUAIS</a>
-                        <a class="dropdown-item" href="/membros-antigos">MEMBROS ANTIGOS</a>
+                        <a class="dropdown-item" href="/teste">teste</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/solicite">SOLICITE UMA TRANSMISSÃO</a>
-                </li>
-
+                @foreach ($pages as $page)
+                    <li class="nav-item">
+                        <a class="nav-link" href="/{{ $page->slug }}">{{ $page->title }}</a>
+                    </li>
+                @endforeach
                 <li class="nav-item">
                     <a class="nav-link" href="/contato">CONTATO</a>
                 </li>
-                <li class="nav-item dropdown btn-group">
-                    <a class="nav-link dropdown-toggle" id="tx-dropdown"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        TRANSMISSÕES
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="tx-dropdown">
-                        <div class="px-5">
-
-                            <div class="container-fluid">
-
-                                <div class="row">
-                                    <ul class="list-unstyled col-md-6 px-3">
-                                       <li>
-                                           <a class="dropdown-item" href="/sobre"><i class="fab fa-angular fa-2x"></i></a>
-                                       </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">MEMBROS ATUAIS</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">MEMBROS ANTIGOS</a>
-                                        </li>
-                                    </ul>
-                                    <ul class="list-unstyled col-md-6 px-3">
-                                       <li>
-                                           <a class="dropdown-item" href="/sobre"><i class="fab fa-angular fa-2x"></i></a>
-                                       </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">MEMBROS ATUAIS</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">MEMBROS ANTIGOS</a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="/solicite">SOLICITE</a>
                 </li>
 
             </ul>

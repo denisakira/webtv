@@ -8,18 +8,10 @@ use webTV\Mail\Contato;
 
 use webTV\MembrosAntigos;
 use webTV\MembrosAtuais;
+use webTV\Models\Page;
 
-class HomeController extends Controller
+class PageController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-    }
-
     /**
      * Show the application dashboard.
      *
@@ -28,6 +20,13 @@ class HomeController extends Controller
     public function index()
     {
         return view('modules.home');
+    }
+
+    public function show($slug)
+    {
+        $page = Page::findBySlug($slug);
+
+        return view('modules.page', ['page' => $page]);
     }
 
 
@@ -70,33 +69,5 @@ class HomeController extends Controller
     {
         return view('modules.solicite');
     }
-
-    /**
-     * Retorna a view modules/membros-atuais
-     *
-     * @param MembrosAtuais $atuais
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
-    public function atuais(MembrosAtuais $atuais)
-    {
-        // $atuais = $atuais->all();
-
-        return view('modules.membros-atuais', compact('atuais'));
-    }
-
-    /**
-     * Retorna a view modules/membros-antigos
-     *
-     * @param MembrosAntigos $antigos
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
-    public function antigos(MembrosAntigos $antigos)
-    {
-        // $antigos = $antigos->all();
-
-        return view('modules.membros-antigos', compact('antigos'));
-    }
-
-
 
 }
